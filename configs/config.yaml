@@ -1,0 +1,19 @@
+paths:
+  raw_data_dir: "data/raw"
+  vector_store_dir: "data/vector_store"
+  prompt_file: "configs/prompts/rag_prompt.md"
+
+ingestion:
+  allowed_extensions: [".pdf", ".txt"]
+
+chunking:
+  size: 900
+  overlap: 100
+
+embedding:
+  provider: "openai"
+  model_name: "text-embedding-3-small"
+
+llm:
+  model_name: "gpt-4o-mini"
+  temperature: 0.1
